@@ -1,0 +1,11 @@
+RewriteEngine On
+
+# Set the base directory
+# Example: http://domain.fi/babytracker
+# base dir: /babytracker
+
+RewriteBase /babytracker
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .$ index.php
